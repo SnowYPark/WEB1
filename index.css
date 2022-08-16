@@ -1,0 +1,93 @@
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2px;
+    padding: 5px 5px 10px;
+
+    cursor: pointer;
+
+    border: none;
+    background-color: #ffffff00;
+}
+
+.nav-button:hover{
+    text-decoration: underline;
+}
+
+
+
+.nav-round-button{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 2px 2px 2px 10px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff00;
+}
+
+.nav-round-button:hover{
+    background-color: #ebebeb
+    
+}
+
+
+/*==========<<main>>>=======*/
+
+
+main{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+    padding-top: 100px;
+
+}
+
+.google-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    border: 1px solid #dbdbdb;
+    border-radius: 50%;
+
+}
+
+/*===========<<footer>>======*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+
+
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+
+}
