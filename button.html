@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+    *{
+       box-sizing: border-box;
+    }
+    button {
+        box-sizing: border-box;
+        
+        border: 3px solid #dbdbdb;
+        border-radius: 5px;
+
+        width: 100px;
+        height: 50px;
+
+        font-size: 20;
+        font-weight: 700;
+        color: #121212;
+
+        background-color: white;
+
+        cursor: pointer;   
+
+    }
+
+    button:active{
+        background-color: #c28787;
+    }
+
+    button:hover{
+        border: 2px solid #329f32;
+    }
+
+    button:focus{
+        border: 2px solid #ffaa32;
+    }
+
+    input[type=search]{
+        outline: none;
+        border: 2px solid #c9a4a4;
+        border-radius: 5px;
+
+        width: 200px;
+        height: 50px;
+
+    }
+
+    input[type=search]:focus{
+        border: 2px solid #7d1ca3;
+    }   
+
+    .input-items{
+        display: flex;
+        align-items: center;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="input-item">
+        
+        <input type="search">
+        <button type="button">검색</button>
+
+    </div>
+</body>
+</html>
