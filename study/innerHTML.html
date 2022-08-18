@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+
+        
+
+        html, body{
+            height: 100%;
+        }
+
+        .user-info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        table{
+            margin-top: 20px;
+            border: 1px solid #141414;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td{
+            border: 1px solid #141414;
+            padding: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="user-info">
+        <input type="text" class="user-input" placeholder="이름을 입력하세요.">
+        <input type="tel" class="user-input" placeholder="연락처를 입력하세요.">
+       <button type="button" class="add-button">등록</button>
+    </div>
+
+       <table>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>연락처</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>김ㅇㅇ</td>
+                    <td>010-0000-0000</td>
+                </tr>
+            </tbody>
+        </table>
+   
+
+        <script>
+
+            const addButton = document.querySelector(".add-button");
+            const userInput = document.querySelectorAll(".user-input");
+            const tableBody = document.querySelector("tbody");
+
+            let index = 1;
+
+            addButton.onclick = () => {
+                index++;
+                tableBody.innerHTML += `
+                <tr>
+                    <td>${index}</td>
+                    <td>${userInput[0].value}</td>
+                    <td>${userInput[1].value}</td>
+                </tr>
+                `;
+            }
+            
+
+        </script>
+
+</body>
+</html>
