@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="/17/images/coffee-blue.jpg" alt="coffe">
+  
+    <button type="button" class="left-button">&lt</button>
+    <button type="button" class="right-button">&gt</button>
+
+    
+
+    <script>
+
+        let test = 10;
+
+        console.log(test);
+
+
+
+
+        const coffeImg = document.querySelector(".img");
+        const leftButton = document.querySelector(".left-button");
+        const rightButton = document.querySelector(".right-button");
+
+        const prefix = "/17/images/";
+        const subfix = ".jpg";
+
+        let coffeImgs = ["coffee-blue", "coffee-gray", "coffee-pink"];
+        let imgIndex = 0;
+
+        rightButton.onclick = () => {
+            imgIndex++;
+            if(imgIndex < coffeImgs.length){
+                coffeImg.src = prefix + coffeImgs[imgIndex] + subfix;
+            }else{
+                alert("마지막 사진입니다.");
+            }
+        }
+
+        coffeImg.onclick = () => {
+            alert(`(${event.target.src}})커피 이미지 입니다"`);
+
+        }
+        
+        leftButton.onclick = () => {
+            
+            if(imgIndex > 0){
+                imgIndex--;
+                coffeImg.src = prefix + coffeImgs[imgIndex] + subfix;
+            }else{
+                alert("첫번째 사진입니다.");
+            }
+        }
+        
+      
+    </script>
+</body>
+</html>

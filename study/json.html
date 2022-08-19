@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let user = {
+            name: "nname",
+            email: "email@kakao.com",
+            username: "park",
+            password: "1234",
+            showinfo: () =>{
+                console.log(`
+
+                    이름: ${user.name}
+                    이메일: ${user.email}
+                    아이디: ${user.username}
+                    비밀번호: ${user.password}
+
+                `);
+            }   
+        };  
+
+        user.showinfo();
+
+        let josnText = JSON.stringify(user);
+
+        console.log(josnText);
+
+        let jsonObj = JSON.parse(josnText);
+
+        console.log(jsonObj.username);
+
+    </script>
+
+</body>
+</html>
